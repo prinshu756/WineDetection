@@ -1,12 +1,12 @@
+import seaborn as sns 
 import numpy as np
-import matplotlib.pyplot as plt
-import math 
+import matplotlib.pyplot as plt 
+import subprocess as sb 
+import math
+import time
+import cv2
+import mediapipe as mp
 
-x = np.random.random((8))
-print(x.shape)
-print(x)
-plt.xlabel("X Axis")
-plt.ylabel("Y Axis")
-plt.pie(x)
-# plt.imshow(x)
-plt.show()
+
+dataset = sns.load_dataset('boston')
+print(dataset)
